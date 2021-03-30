@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "625776270547",
+    "project_id": "final-zerocry1",
+    "storage_bucket": "final-zerocry1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:625776270547:android:ae55b7b296cc1d00ec0826",
+        "android_client_info": {
+          "package_name": "com.example.final_zerocry1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "625776270547-7dqlas4l51nma22ksq5s4ndq8n1uqmmt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWdi6xCutQSrjW9dm-GZ2FFu167mD9sLU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "625776270547-7dqlas4l51nma22ksq5s4ndq8n1uqmmt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
