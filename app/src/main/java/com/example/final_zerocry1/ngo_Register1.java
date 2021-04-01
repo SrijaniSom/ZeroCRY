@@ -43,13 +43,16 @@ public class ngo_Register1 extends AppCompatActivity {
                 String nameTXT = name1.getText().toString();
                 String contactTXT = contact1.getText().toString();
                 String dobTXT = dob1.getText().toString();
-
+                if(nameTXT.isEmpty()||contactTXT.isEmpty()||dobTXT.isEmpty()){
+                    Toast.makeText(ngo_Register1.this,"You should fill all details",Toast.LENGTH_SHORT).show();
+                }
+                else{
                 Boolean checkinsertdata = DB1.insertuserdata1(nameTXT, contactTXT, dobTXT);
                 if(checkinsertdata==true)
                     Toast.makeText(ngo_Register1.this, "New Entry Inserted", Toast.LENGTH_SHORT).show();
                 else
                     Toast.makeText(ngo_Register1.this, "New Entry Not Inserted", Toast.LENGTH_SHORT).show();
-            }        });
+                   }     }   });
         update1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

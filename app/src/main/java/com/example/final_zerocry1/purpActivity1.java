@@ -55,13 +55,16 @@ public class purpActivity1 extends AppCompatActivity
                 String nameTXT = mySpinner1.getText().toString();
                 String contactTXT = mySpinner2.getSelectedItem().toString();
                 String dobTXT = mySpinner3.getSelectedItem().toString();
-
+                if(nameTXT.isEmpty()||contactTXT.isEmpty()||dobTXT.isEmpty()){
+                    Toast.makeText(purpActivity1.this,"Fill all entries",Toast.LENGTH_SHORT).show();
+                }
+                else{
                 Boolean checkinsertdata = DB.insertuserdata(nameTXT, contactTXT, dobTXT);
                 if(checkinsertdata==true)
                     Toast.makeText(purpActivity1.this, "New Entry Inserted", Toast.LENGTH_SHORT).show();
                 else
                     Toast.makeText(purpActivity1.this, "New Entry Not Inserted", Toast.LENGTH_SHORT).show();
-            }        });
+                }        }});
 
 
         mod.setOnClickListener(new View.OnClickListener() {

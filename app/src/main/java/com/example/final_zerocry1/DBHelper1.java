@@ -46,11 +46,11 @@ public class DBHelper1 extends SQLiteOpenHelper
     }
 
 
-    public Boolean updateuserdata(String name, String contact, String address) {
+    public Boolean updateuserdata(String name, String contact, String dob) {
         SQLiteDatabase DB = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
         contentValues.put("contact", contact);
-        contentValues.put("address", address);
+        contentValues.put("dob", dob);
         Cursor cursor = DB.rawQuery("Select * from Userdetails where name = ?", new String[]{name});
         if (cursor.getCount() > 0) {
             long result = DB.update("Userdetails", contentValues, "name=?", new String[]{name});

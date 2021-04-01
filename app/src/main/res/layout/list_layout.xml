@@ -12,6 +12,8 @@
 
     <ListView
         android:layout_marginTop="10dp"
+        android:divider="@color/primary_dark"
+        android:dividerHeight="2dp"
         android:layout_height="match_parent"
         android:layout_width="match_parent"
         android:id="@+id/ngo_listView"/>
